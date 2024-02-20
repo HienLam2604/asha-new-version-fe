@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'eee';
+  title = 'Asha';
   data: any;
   constructor(private articleService: ArticleService) { }
   ngOnInit(): void {
     this.articleService.getAllArticles().subscribe(res => {
       console.log(res)
-      this.data = res.data
+      this.data = res
     })
   }
 
