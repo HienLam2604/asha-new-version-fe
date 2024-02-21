@@ -10,6 +10,6 @@ export class ArticleService {
   constructor(private http: HttpClient) { }
 
   getAllArticles(): Observable<any> {
-    return this.http.get('http://localhost:3000/api')
+    return this.http.get('http://api.asha.com.vn/api/products')
   }
 }
