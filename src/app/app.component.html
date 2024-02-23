@@ -1,3 +1,38 @@
 Data
-{{ data | json}}
-<h1>Lam Chi Hien</h1>
+<!-- {{ data | json}} -->
+<h1>Angular Router App</h1>
+<nav class="">
+    <ul class="flex gap-3">
+        <li><a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a>
+        </li>
+        <li><a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">Second
+                Component</a></li>
+    </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
+
+<div class="card">
+    <p-menubar [model]="items"></p-menubar>
+</div>
+
+
+<div class="card">
+    <p-table [value]="data" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>id</th>
+                <th>ten</th>
+                <th>tenkhongdau</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.ten }}</td>
+                <td>{{ product.tenkhongdau }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+<h1 class="text-red-500">Lam Chi Hien</h1>
