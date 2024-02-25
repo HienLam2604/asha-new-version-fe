@@ -1,0 +1,30 @@
+<div class="py-4 sticky top-0 bg-white">
+    <div class="container mx-auto">
+        <div class="max-md:flex max-md:flex-row-reverse">
+            <div class="grid gap grid-cols-12 items-center">
+                <div class="col-span-1">
+                    <img src="https://storage.googleapis.com/mm-online-bucket/ecommerce-website/uploads/media/mm-logo.png"
+                        alt="logo">
+                </div>
+                <div class="col-span-8">
+                    <p-inputGroup class="h-10">
+                        <input class="border" type="text" pInputText placeholder="Keyword" />
+                        <button class="text-white bg-blue-600" type="button" pButton label="Tìm kiếm"></button>
+                    </p-inputGroup>
+
+                </div>
+                <div class="col-span-3 ml-3">
+                    <div class="">
+                        <i class="pi pi-shopping-cart mr-3"></i>
+                        <button>Giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <p-menubar [style]="{border:'none', background: 'white'}" [model]="items">
+                </p-menubar>
+            </div>
+        </div>
+    </div>
+
+</div>
